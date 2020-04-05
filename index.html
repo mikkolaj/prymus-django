@@ -3,17 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Krabik</title>
+    <link type="text/css" rel="stylesheet" href="btstrapmin.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Potężny krab</h1>
-    <p>Tak, to właśnie on:</p>
-    <img src="crab.jpg" height="480" width="854">
-    <p>Czyż nie jest on:</p>
-    <ul>
-        <li>Wielki</li>
-        <li>Dostojny</li>
-        <li>Majestatyczny</li>
-    </ul>
-    <a href="form.html">Formularz</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="form.html">Formularz</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="form.html">Losowa strona</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="rowxd">
+        <div class="column1" style="background-color:#d2e8ae;">
+            <h1>Wybierz coś:</h1>
+            <ol>
+                <li><a href="form.html">Formularz</a></li>
+                <li><a href="https://pl.wikipedia.org/wiki/Specjalna:Losowa_strona">Losowa strona</a></li>
+            </ol>
+        </div>
+        <div class="column2" style="background-color:#bfdff5;">
+            <h1>Potężny krab</h1>
+            <p>Tak, to właśnie on:</p>
+            <img src="crab.jpg" height="480" width="854">
+            <p>Czyż nie jest on:</p>
+            <ul>
+                <li>Wielki</li>
+                <li>Dostojny</li>
+                <li>Majestatyczny</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
