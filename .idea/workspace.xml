@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2953c37f-f9a5-44ae-acc7-e919b42d4c2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/slowa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordgame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prymus-django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prymus-django.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2953c37f-f9a5-44ae-acc7-e919b42d4c2a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +52,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wordgame.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\bulmi\Desktop\django\prymus-django\wordgame\wordgame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585560567787</updated>
       <workItem from="1586120285668" duration="4460000" />
-      <workItem from="1586164925160" duration="2831000" />
+      <workItem from="1586164925160" duration="3078000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie formularza">
       <created>1585563487772</created>
@@ -102,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586124750502</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="wordgame">
+      <created>1586167982673</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586167982673</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,33 +128,34 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dodanie formularza" />
     <MESSAGE value="navbar i dzielenie strony" />
-    <option name="LAST_COMMIT_MESSAGE" value="navbar i dzielenie strony" />
+    <MESSAGE value="wordgame" />
+    <option name="LAST_COMMIT_MESSAGE" value="wordgame" />
   </component>
   <component name="WindowStateProjectService">
     <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586166460408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586166460408" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1586124750018">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1586167982137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586124750018" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586167736384">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586167982137" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586167991057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586167736384" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586167736384">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586167991057" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586167991057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586167736384" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586167736384">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586167991057" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586167991057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586167736384" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586167736384">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586167991057" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586167991057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586167736384" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586167991057" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1586165057787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
