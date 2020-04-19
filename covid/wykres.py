@@ -46,8 +46,6 @@ with open('dane.txt') as csv_file:
 
 infected = {k: v for k, v in sorted(infected.items(), key=lambda item: item[1])}
 recovered = {k: v for k, v in sorted(recovered.items(), key=lambda item: item[1])}
-print(infected)
-print(recovered)
 
 output_file("pie.html")
 
