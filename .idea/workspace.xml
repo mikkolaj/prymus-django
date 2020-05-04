@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2953c37f-f9a5-44ae-acc7-e919b42d4c2a" name="Default Changelist" comment="">
+    <list default="true" id="2953c37f-f9a5-44ae-acc7-e919b42d4c2a" name="Default Changelist" comment="wykres">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/AUTHORS" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/INSTALLER" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/LICENSE" afterDir="false" />
@@ -7732,7 +7733,7 @@
       <workItem from="1587376498076" duration="3295000" />
       <workItem from="1587979170027" duration="507000" />
       <workItem from="1587979691735" duration="5094000" />
-      <workItem from="1588584276371" duration="1274000" />
+      <workItem from="1588584276371" duration="1945000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie formularza">
       <created>1585563487772</created>
@@ -7769,7 +7770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587333314568</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="wykres">
+      <created>1588585824583</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588585824584</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -7778,6 +7786,16 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -7801,14 +7819,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="wykres" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586166460408">
+    <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588586278905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586166460408" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1587333314071">
+    <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588586278905" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1588585950226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587333314071" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588585950226" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1588585610867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
