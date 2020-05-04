@@ -7732,7 +7732,7 @@
       <workItem from="1587376498076" duration="3295000" />
       <workItem from="1587979170027" duration="507000" />
       <workItem from="1587979691735" duration="5094000" />
-      <workItem from="1588584276371" duration="3041000" />
+      <workItem from="1588584276371" duration="4023000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie formularza">
       <created>1585563487772</created>
@@ -7783,7 +7783,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588586412290</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="wykres">
+      <created>1588587597539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588587597539</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -7821,19 +7828,19 @@
     <MESSAGE value="dodanie formularza" />
     <MESSAGE value="navbar i dzielenie strony" />
     <MESSAGE value="wordgame" />
-    <MESSAGE value="wykres" />
     <MESSAGE value="procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="procfile" />
+    <MESSAGE value="wykres" />
+    <option name="LAST_COMMIT_MESSAGE" value="wykres" />
   </component>
   <component name="WindowStateProjectService">
     <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588586278905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588586278905" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1588586394215">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1588587614642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588586394215" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588587614642" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1588585610867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
