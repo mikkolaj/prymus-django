@@ -2,32 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2953c37f-f9a5-44ae-acc7-e919b42d4c2a" name="Default Changelist" comment="wykres">
-      <change afterPath="$PROJECT_DIR$/books/static/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/js/c1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/js/c2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/static/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/book_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/components/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/components/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/ex.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/asgiref-3.2.7.dist-info/INSTALLER" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/asgiref-3.2.7.dist-info/LICENSE" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/asgiref-3.2.7.dist-info/METADATA" afterDir="false" />
@@ -4546,16 +4520,9 @@
       <change afterPath="$PROJECT_DIR$/venv/Scripts/sqlformat.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/static/btstrapmin.css" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/css/btstrapmin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/books/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryproj/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryproj/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/migrations/0002_book_author.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/migrations/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -4730,7 +4697,7 @@
       <workItem from="1589188854175" duration="3636000" />
       <workItem from="1589744029765" duration="1599000" />
       <workItem from="1589746176198" duration="4701000" />
-      <workItem from="1589785408571" duration="6804000" />
+      <workItem from="1589785408571" duration="7851000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie formularza">
       <created>1585563487772</created>
@@ -4802,7 +4769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588589948486</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="przebudowa strony">
+      <created>1589792912497</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589792912497</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -4843,7 +4817,8 @@
     <MESSAGE value="procfile" />
     <MESSAGE value="gunicorn" />
     <MESSAGE value="wykres" />
-    <option name="LAST_COMMIT_MESSAGE" value="wykres" />
+    <MESSAGE value="przebudowa strony" />
+    <option name="LAST_COMMIT_MESSAGE" value="przebudowa strony" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Inspections" timestamp="1589750763936">
@@ -4854,10 +4829,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588586278905" />
-    <state x="626" y="122" key="CommitChangelistDialog2" timestamp="1588589935036">
+    <state x="626" y="122" key="CommitChangelistDialog2" timestamp="1589793708310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588589935036" />
+    <state x="626" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589793708310" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1588585610867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
