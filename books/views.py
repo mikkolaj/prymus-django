@@ -3,12 +3,16 @@ from django.shortcuts import render
 from books.models import Book
 
 
-def hello_world(request):
-    return render(request, template_name="hello.html")
+def form(request):
+    return render(request, template_name="form.html")
+
+
+def title(request):
+    return render(request, template_name="index.html")
 
 
 def prev_ex(request):
-    return render(request, template_name="index.html")
+    return render(request, template_name="ex.html")
 
 
 def list_books(request):
@@ -19,3 +23,7 @@ def list_books(request):
     }
     return render(request, template_name="book_list.html", context=context)
 
+
+def book_details(request, book_id):
+    book = Book.objects.get(pk=book_id)
+    return render(request, template_name="book_details.html", context={'bookc': book})

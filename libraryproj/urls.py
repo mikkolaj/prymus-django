@@ -19,7 +19,9 @@ from books import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.hello_world),
-    path('ex/', views.prev_ex),
-    path('ksiazki/', views.list_books),
+    path('', views.title, name="title"),
+    path('form/', views.form, name="form"),
+    path('ex/', views.prev_ex, name="dawne"),
+    path('ksiazki/', views.list_books, name='lista'),
+    path("lista_ksiazek/<int:book_id>", views.book_details, name='book_details'),
 ]
