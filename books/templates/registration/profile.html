@@ -3,11 +3,10 @@
 {% block content %}
     <br>
      {% if user.is_authenticated  %}
-         Witaj {{ user }}!
-
-        <a href="{% url 'logout' %}" class="btn btn-primary">Wyloguj się</a>
-    {% else %}
+         <p>Witaj {{ user }}!</p>
+         <p>Ostatnie logowanie {{request.user.last_login}}</p>
+         <a href="{% url 'logout' %}" class="btn btn-primary">Wyloguj się</a>
+     {% else %}
         <a href="{% url 'login' %}" class="btn btn-primary">Zaloguj się</a>
-    {% endif %}
-{#    <p>Ostatnie logowanie {{request.user.last_login}}</p>#}
+     {% endif %}
 {% endblock %}

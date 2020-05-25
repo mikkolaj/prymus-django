@@ -14,13 +14,33 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Kontakt</a>
             </li>
-              <li class="nav-item">
-                  <a href="{% url 'login' %}" class="nav-link">Zaloguj się</a>
-            </li>
+
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+            <ul class="navbar-nav ml-auto" >
+                <li class="nav-item">
+
+{#                <form class="form-inline mt-2 mt-md-0">#}
+{#                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">#}
+{#                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
+{#                </form>#}
+                </li>
+                {% if not user.is_authenticated %}
+                    <li class="nav-item">
+                          <a href="{% url 'login' %}" class="nav-link">Zaloguj się</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'user_signup' %}" class="nav-link" style="border-style: solid; border-width: 1px;
+                        border-radius: 10px">Zarejestruj się</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a href="{% url 'user_profile' %}" class="nav-link" style="padding-right: 1rem">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'logout' %}" class="nav-link" style="border-style: solid; border-width: 1px;
+                        border-radius: 10px">Wyloguj się</a>
+                    </li>
+                {% endif %}
+            </ul>
         </div>
       </nav>
