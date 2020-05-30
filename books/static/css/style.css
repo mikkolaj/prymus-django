@@ -1,27 +1,52 @@
-.important {
-    color: blue;
+/*.important {*/
+/*    color: blue;*/
+/*}*/
+
+/*p {*/
+/*    color: green;*/
+/*}*/
+
+/*h1 {*/
+/*    background-color: grey;*/
+/*}*/
+
+/*.column1 {*/
+/*    width:20%;*/
+/*    display: table-cell;*/
+/*}*/
+
+/*.column2 {*/
+/*    width:80%;*/
+/*    display: table-cell;*/
+/*}*/
+
+/*.rowxd {*/
+/*    width: 100%;*/
+/*    display: table;*/
+/*    clear: both;*/
+/*}*/
+
+.card-title a:link {
+    color: inherit;
 }
 
-p {
-    color: green;
+
+.card-title a:visited {
+    color: inherit;
 }
 
-h1 {
-    background-color: grey;
+.elo a:link {
+    text-decoration: none;
+    color: inherit;
 }
 
-.column1 {
-    width:20%;
-    display: table-cell;
+.elo a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
-.column2 {
-    width:80%;
-    display: table-cell;
+.elo a:hover {
+    color: inherit;
+    text-decoration: underline;
 }
 
-.rowxd {
-    width: 100%;
-    display: table;
-    clear: both;
-}

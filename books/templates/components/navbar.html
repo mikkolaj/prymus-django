@@ -5,15 +5,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'lista' %}">Książki <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">O nas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Kontakt</a>
-            </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'lista' %}">Książki </a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'author_list' %}">Autorzy <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'review_list' %}">Recenzje <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}">O nas</a>
+              </li>
 
           </ul>
             <ul class="navbar-nav ml-auto" >

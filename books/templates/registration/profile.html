@@ -2,6 +2,7 @@
 
 {% block content %}
     <br>
+    <div style="padding: 30px">
      {% if user.is_authenticated  %}
          <p>Witaj {{ user }}!</p>
          <p>Ostatnie logowanie {{request.user.last_login}}</p>
@@ -9,4 +10,5 @@
      {% else %}
         <a href="{% url 'login' %}" class="btn btn-primary">Zaloguj się</a>
      {% endif %}
+    </div>
 {% endblock %}

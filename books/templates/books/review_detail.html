@@ -1,0 +1,57 @@
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#    <h1>Szczegóły recenzji</h1>#}
+{#    {{ review }}#}
+{#{% endblock %}#}
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <br>
+    <div class="container mt-3 justify-content-center" style="">
+        <div style="box-shadow: 0px 0px 4px #000000;">
+
+            {% if review.book.photo.url is not None %}
+                <div class="row justify-content-center" >
+                    <img src="{{ review.book.photo.url }}" style="display: block; margin: auto; max-block-size: 50rem; border-radius: 50px; padding: 2rem">
+                </div>
+            {% else %}
+                <div class="row justify-content-center" >
+                    <img src="{% static '3.jpg' %}" style="display: block; margin: auto; max-block-size: 50rem; border-radius: 50px; padding: 2rem">
+                </div>
+            {% endif %}
+
+            <div class="row justify-content-center">
+                <h1 style="text-align: center">{{ review.book.title }}</h1>
+            </div>
+
+            <div class="row justify-content-center">
+                <p style="text-align: center">Autor: {{ review.book.author.first|default_if_none:"Brak informacji" }}</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <p style="text-align: center">Data wydania: {{ review.book.published|default_if_none:"Brak informacji" }}</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <h1 style="text-align: center">Recenzja użytkownika <b>{{ review.author }}</b></h1>
+            </div>
+
+            <div class="row justify-content-center">
+                <p style="text-align: center">{{ review.content }}</p>
+            </div>
+
+            <div class="row justify-content-center">
+                {% if review.is_recommended is True %}
+                    <p style="text-align: center">Godna polecenia: <i class="fas fa-check"></i></p>
+                {% else %}
+                    <p style="text-align: center">Godna polecenia: <i class="fas fa-times"></i></i></p>
+                {% endif %}
+            </div>
+
+            <br>
+            </div>
+        </div>
+    </div>
+{% endblock %}

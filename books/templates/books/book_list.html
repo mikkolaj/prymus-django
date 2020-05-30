@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+    <div class="container mt-3" style="border-radius: 50px">
+        <div class="row" style="border-radius: 50px">
+{#            {% for i in '0123456789'|make_list %}#}
+
+            {% for book in books %}
+                <div class="card col-12 col-md-3" style="border-radius: 0px; background-color: rgb(230, 255, 255); padding-top: 10px">
+                    {% if book.photo.url is not None %}
+                        <a href="{% url 'book_details' book.id %}"><img  src="{{ book.photo.url }}" class="card-img-top" alt="..." style=" border-radius: 20px; height: 220px; object-fit: cover"></a>
+                    {% else %}
+                        <a href="{% url 'book_details' book.id %}"><img  src="{% static '3.jpg' %}" class="card-img-top" alt="..." style=" border-radius: 20px; height: 220px; object-fit: cover"></a>
+                    {% endif %}
+                    <div class="card-body" >
+                        <h5 class="card-title"><a href="{% url 'book_details' book.id %}">{{ book.title }}</a></h5>
+                        <p class="card-text">{{ book.short_description|truncatewords:10 }}</p>
+                    </div>
+                </div>
+{#            {% endfor %}#}
+            {% endfor %}
+        </div>
+    </div>
+
+    <hr>
+{% endblock %}
