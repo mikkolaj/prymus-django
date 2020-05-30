@@ -9,7 +9,7 @@
                 {#       normalne zdjęcia        #}
 {#                <img src="{{ author.photo.url }}" style="display: block; margin: auto; max-block-size: 50rem; border-radius: 50px; padding: 2rem">#}
                 {#          placeholder dla heroku          #}
-                <img src="{% static '../media/tolkien.jpg' %}" style="display: block; margin: auto; max-block-size: 50rem; border-radius: 50px; padding: 2rem">
+                <img src="{% static 'tolkien.jpg' %}" style="display: block; margin: auto; max-block-size: 50rem; border-radius: 50px; padding: 2rem">
             </div>
 
             <div class="row justify-content-center">
@@ -17,7 +17,7 @@
             </div>
 
             <div class="row justify-content-center">
-                <p style="text-align: center">O autorze: {{ author.about|default_if_none:"Brak informacji" }}</p>
+                <p style="text-align: center; padding-left: 20px; padding-right: 20px">O autorze: {{ author.about|default_if_none:"Brak informacji" }}</p>
             </div>
 
             <div class="row justify-content-center">

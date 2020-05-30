@@ -10,7 +10,7 @@
                     {#       normalne zdjęcia        #}
 {#                    <a href="{% url 'author_detail' author.id %}"><img  src="{{ author.photo.url }}" class="card-img-top" alt="..." style=" border-radius: 10px"></a>#}
                     {#          placeholder dla heroku          #}
-                    <a href="{% url 'author_detail' author.id %}"><img  src="{% static '../media/tolkien.jpg' %}" class="card-img-top" alt="..." style=" border-radius: 10px"></a>
+                    <a href="{% url 'author_detail' author.id %}"><img  src="{% static 'tolkien.jpg' %}" class="card-img-top" alt="..." style=" border-radius: 10px"></a>
                     <div class="card-body" >
                         <h5 class="card-title"><a href="{% url 'author_detail' author.id %}">{{ author }}</a></h5>
                         <p class="card-text">{{ author.about|truncatewords:10 }}</p>

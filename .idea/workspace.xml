@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2953c37f-f9a5-44ae-acc7-e919b42d4c2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/books/static/tolkien.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/templates/books/author_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/author_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/templates/books/author_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/author_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/templates/books/book_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/book_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +60,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libraryproj/settings.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/books/static" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bulmi\Desktop\django\prymus-django\books\static" />
+      <recent name="C:\Users\bulmi\Desktop\django\prymus-django\books\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bulmi\Desktop\django\prymus-django\books\templates\books" />
       <recent name="C:\Users\bulmi\Desktop\django\prymus-django\books\media" />
       <recent name="C:\Users\bulmi\Desktop\django\prymus-django\books\static\css" />
       <recent name="C:\Users\bulmi\Desktop\django\prymus-django\books\static\js" />
       <recent name="C:\Users\bulmi\Desktop\django\prymus-django\books\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bulmi\Desktop\django\prymus-django\books\templates" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.navbar.html">
@@ -173,7 +178,7 @@
       <workItem from="1590571448417" duration="12000" />
       <workItem from="1590827535111" duration="13996000" />
       <workItem from="1590847632348" duration="377000" />
-      <workItem from="1590848201473" duration="350000" />
+      <workItem from="1590848201473" duration="1174000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie formularza">
       <created>1585563487772</created>
@@ -273,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590848000924</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="photo placeholders">
+      <created>1590848780369</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1590848780369</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +331,8 @@
     <MESSAGE value="edycja navbara, dodanie ekranu wylogowania" />
     <MESSAGE value="edycja navbara, ekran wylogowania" />
     <MESSAGE value="dodanie lepszych widoków list i widoków detali" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie lepszych widoków list i widoków detali" />
+    <MESSAGE value="photo placeholders" />
+    <option name="LAST_COMMIT_MESSAGE" value="photo placeholders" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Inspections" timestamp="1589750763936">
@@ -330,10 +343,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588586278905" />
-    <state x="626" y="122" key="CommitChangelistDialog2" timestamp="1590847996862">
+    <state x="626" y="122" key="CommitChangelistDialog2" timestamp="1590849490810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590847996862" />
+    <state x="626" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590849490810" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1588585610867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
