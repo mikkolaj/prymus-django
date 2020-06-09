@@ -39,6 +39,9 @@ class Author(models.Model):
     def __str__(self):
         return self.first_name + " " + self.last_name
 
+    def get_absolute_url(self):
+        return reverse("author_detail", args=[self.pk])
+
 
 class Review(models.Model):
     book = models.ForeignKey(to=Book, verbose_name="recenzowana książka", on_delete=models.CASCADE)
@@ -52,3 +55,6 @@ class Review(models.Model):
 
     def __str__(self):
         return "Recenzja książki: " + self.book.title
+
+    def get_absolute_url(self):
+        return reverse("review_details", args=[self.pk])

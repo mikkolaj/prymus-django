@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2953c37f-f9a5-44ae-acc7-e919b42d4c2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/books/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/books/author_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/books/book_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/books/review_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/books/simple_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/components/author_tiles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/components/book_tiles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/components/book_tiles2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/components/review_tiles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/search_results.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books/templates/simple_form_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prymus-django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prymus-django.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/author_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/author_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/author_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/author_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/book_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/book_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/review_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/review_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/books/review_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/books/review_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/components/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/components/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/ex.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/ex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/registration/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/registration/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/templates/registration/signup_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/templates/registration/signup_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryproj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryproj/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraryproj/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryproj/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +180,7 @@
       <workItem from="1591003551466" duration="5432000" />
       <workItem from="1591642189016" duration="6856000" />
       <workItem from="1591688207628" duration="6606000" />
-      <workItem from="1591707661349" duration="860000" />
+      <workItem from="1591707661349" duration="1424000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie formularza">
       <created>1585563487772</created>
@@ -326,7 +294,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590849505135</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="some changes">
+      <created>1591708598047</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591708598047</updated>
+    </task>
+    <task id="LOCAL-00018" summary="requirements">
+      <created>1591708726341</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1591708726341</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +355,9 @@
     <MESSAGE value="edycja navbara, ekran wylogowania" />
     <MESSAGE value="dodanie lepszych widoków list i widoków detali" />
     <MESSAGE value="photo placeholders" />
-    <option name="LAST_COMMIT_MESSAGE" value="photo placeholders" />
+    <MESSAGE value="some changes" />
+    <MESSAGE value="requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Inspections" timestamp="1589750763936">
@@ -384,10 +368,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="729" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588586278905" />
-    <state x="626" y="122" key="CommitChangelistDialog2" timestamp="1591708597344">
+    <state x="626" y="122" key="CommitChangelistDialog2" timestamp="1591708725899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591708597344" />
+    <state x="626" y="122" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591708725899" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1588585610867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
