@@ -3,19 +3,14 @@
 {% load static %}
 {% block content %}
     <div class="container mt-3" style="border-radius: 50px">
+        <a href="{% url 'author_create' %}" class="btn btn-secondary btn-block"  >
+            Dodaj autora <i class="fas fa-pen-fancy"></i>
+        </a>
         <div class="row" style="border-radius: 50px">
 
             {% for author in author_list %}
-                <div class="card col-12 col-md-3" style="border-radius: 0px; background-color: rgb(230, 255, 255); padding-top: 10px">
-                    {#       normalne zdjęcia        #}
-{#                    <a href="{% url 'author_detail' author.id %}"><img  src="{{ author.photo.url }}" class="card-img-top" alt="..." style=" border-radius: 10px"></a>#}
-                    {#          placeholder dla heroku          #}
-                    <a href="{% url 'author_detail' author.id %}"><img  src="{% static 'tolkien.jpg' %}" class="card-img-top" alt="..." style=" border-radius: 10px"></a>
-                    <div class="card-body" >
-                        <h5 class="card-title"><a href="{% url 'author_detail' author.id %}">{{ author }}</a></h5>
-                        <p class="card-text">{{ author.about|truncatewords:10 }}</p>
-                    </div>
-                </div>
+
+                {% include "components/author_tiles.html" %}
 
             {% endfor %}
         </div>

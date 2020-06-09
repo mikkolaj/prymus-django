@@ -1,49 +1,47 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="{% url 'title' %}"><i class="fas fa-book"></i> Biblioteka</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+    <a class="navbar-brand" href="{% url 'title' %}"><i class="fas fa-book"></i> Biblioteka</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
                 <a class="nav-link" href="{% url 'lista' %}">Książki </a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'author_list' %}">Autorzy <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'review_list' %}">Recenzje <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="{% url 'about' %}">O nas</a>
-              </li>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'author_list' %}">Autorzy <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'review_list' %}">Recenzje <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">O nas</a>
+            </li>
 
-          </ul>
-            <ul class="navbar-nav ml-auto" >
+        </ul>
+        <ul class="navbar-nav ml-auto" >
+
+            {% if not user.is_authenticated %}
                 <li class="nav-item">
-
-{#                <form class="form-inline mt-2 mt-md-0">#}
-{#                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">#}
-{#                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
-{#                </form>#}
+                    <a href="{% url 'login' %}" class="nav-link">Zaloguj się</a>
                 </li>
-                {% if not user.is_authenticated %}
-                    <li class="nav-item">
-                          <a href="{% url 'login' %}" class="nav-link">Zaloguj się</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'user_signup' %}" class="nav-link" style="border-style: solid; border-width: 1px;
+                <li class="nav-item">
+                    <a href="{% url 'user_signup' %}" class="nav-link" style="border-style: solid; border-width: 1px;
                         border-radius: 10px">Zarejestruj się</a>
-                    </li>
-                {% else %}
-                    <li class="nav-item">
-                        <a href="{% url 'user_profile' %}" class="nav-link" style="padding-right: 1rem">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'logout' %}" class="nav-link" style="border-style: solid; border-width: 1px;
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a href="{% url 'logout' %}" class="nav-link" style="border-style: solid; border-width: 1px;
                         border-radius: 10px">Wyloguj się</a>
-                    </li>
-                {% endif %}
-            </ul>
-        </div>
-      </nav>
+                </li>
+            {% endif %}
+            <li class="nav-item" style="padding-left: 10px">
+
+                <form class="form-inline mt-2 mt-md-0" method="get" action="{% url 'search' %}">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="q">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>

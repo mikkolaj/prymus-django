@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 # Create your models here.
@@ -18,7 +19,10 @@ class Book(models.Model):
         verbose_name_plural = "książki"
 
     def __str__(self):
-        return "Książka: " + self.title
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse("book_details", args=[self.pk])
 
 
 class Author(models.Model):

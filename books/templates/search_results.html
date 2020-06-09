@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div style="padding: 50px; padding-top: 20px">
+    <h1 style="text-align: center">Wyniki wyszukiwania</h1>
+
+    <h3>Książki:</h3>
+    {% for result in books %}
+        <p class="elo"><a href="{% url 'book_details' result.id %}">{{ result }}</a></p>
+{#        {% include 'components/book_tiles2.html' %}#}
+    {% empty %}
+        <div class="alert alert-secondary">Brak wynikow</div>
+    {% endfor %}
+    <h3>Autorzy:</h3>
+    {% for result in authors %}
+        <p class="elo"><a href="{% url 'author_detail' result.id %}">{{ result }}</a></p>
+    {% empty %}
+        <div class="alert alert-secondary">Brak wynikow</div>
+    {% endfor %}
+    </div>
+{% endblock %}

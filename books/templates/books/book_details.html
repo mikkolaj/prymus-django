@@ -37,13 +37,13 @@
 
 
             {% if book.review_set.exists %}
-            <div class="row justify-content-center">
-                <h2 style="text-align: center">Lista recenzji</h2>
-            </div>
+                <div class="row justify-content-center">
+                    <h2 style="text-align: center">Lista recenzji</h2>
+                </div>
             {% else %}
-            <div class="row justify-content-center">
-                <h2 style="text-align: center">Obecnie brak recenzji</h2>
-            </div>
+                <div class="row justify-content-center">
+                    <h2 style="text-align: center">Obecnie brak recenzji</h2>
+                </div>
             {% endif %}
 
 
@@ -51,12 +51,12 @@
                 {% for review in book.review_set.all %}
                     <div class="card col-12 col-md-3" style="border-radius: 0px; background-color: rgb(230, 255, 255); padding-top: 10px">
                         {% if book.photo.url is not None %}
-                                <a href="{% url 'review_details' review.id %}"><img  src="{{ book.photo.url }}" class="card-img-top"  style=" border-radius: 20px; height: 220px; object-fit: cover"></a>
+                            <a href="{% url 'review_details' review.id %}"><img  src="{{ book.photo.url }}" class="card-img-top"  style=" border-radius: 20px; height: 220px; object-fit: cover"></a>
                         {% else %}
-                                <a href="{% url 'review_details' review.id %}"><img  src="{% static '3.jpg' %}" class="card-img-top"  style=" border-radius: 20px; height: 220px; object-fit: cover"></a>
+                            <a href="{% url 'review_details' review.id %}"><img  src="{% static '3.jpg' %}" class="card-img-top"  style=" border-radius: 20px; height: 220px; object-fit: cover"></a>
                         {% endif %}
 
-{#                        <a href="{% url 'review_details' review.id %}"><img  src="{% static '3.jpg' %}" class="card-img-top"  style=" border-radius: 10px"></a>#}
+                        {#                        <a href="{% url 'review_details' review.id %}"><img  src="{% static '3.jpg' %}" class="card-img-top"  style=" border-radius: 10px"></a>#}
                         <div class="card-body" >
                             <h5 class="card-title"><a href="{% url 'book_details' book.id %}">{{ book.title }}</a></h5>
                             <p class="card-text">{{ book.short_description|truncatewords:10 }}</p>

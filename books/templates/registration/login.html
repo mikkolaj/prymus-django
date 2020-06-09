@@ -1,27 +1,32 @@
 {%extends "base.html"%}
+{% load widget_tweaks %}
 {%block content%}
-{%if form.errors%}
-<p>Your username and password didn't match. Please try again.</p>
-{%endif%}
-{%if next%}
-{%if user.is_authenticated%}
-    <p>Your account doesn't have access to this page. To proceed,    please login with an account that has access.</p>
-{%else%}
-    <p>Please login to see this page.</p>
-{%endif%}
-{%endif%}
-<form method="post"action="{%url 'login'%}">
-    {%csrf_token%}
-    <br>
-    <table>
-        <tr>
-            <td>{{form.username.label_tag}}</td>
-            <td>{{form.username}}</td>
-        </tr>
-        <tr>
-            <td>{{form.password.label_tag}}</td>
-            <td>{{form.password}}</td></tr></table>
-    <input type="submit"value="login">
-    <input type="hidden"name="next"value="{{next}}">
-</form>
+    <div style="padding-right: 200px; padding-left: 200px; padding-top: 20px">
+    {%if form.errors%}
+        <p>Your username and password didn't match. Please try again.</p>
+    {%endif%}
+    {%if next%}
+        {%if user.is_authenticated%}
+            <p>Your account doesn't have access to this page. To proceed, please login with an account that has access.</p>
+        {%else%}
+            <p>Please login to see this page.</p>
+        {%endif%}
+    {%endif%}
+    <form method="post" action="{%url 'login'%}">
+        {%csrf_token%}
+        <br>
+        {% for field in form.visible_fields %}
+                <div class="form-group">
+                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                    {{ field|add_class:'form-control' }}
+                    {% for error in field.errors %}
+                        <span class="help-block">{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        <button type="submit" class="btn btn-secondary btn-block" value="login">Wyślij</button>
+        <input type="hidden" name="next" value="{{next}}">
+        <br>
+    </form>
+    </div>
 {%endblock%}

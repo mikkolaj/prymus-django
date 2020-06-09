@@ -1,0 +1,15 @@
+{% load static %}
+<div class="col-12 col-md-3" style="padding-top: 10px">
+    <div class="card h-100" style="border-radius: 10px">
+        {% if review.book.photo.url is not None %}
+            <a href="{% url 'review_details' review.id %}"><img  src="{{ review.book.photo.url }}" class="card-img-top" alt="..." style="height: 220px; object-fit: cover"></a>
+        {% else %}
+            <a href="{% url 'review_details' review.id %}"><img  src="{% static '3.jpg' %}" class="card-img-top" alt="..."style="height: 220px; object-fit: cover"></a>
+        {% endif %}
+        <div class="card-body" >
+            <h5 class="card-title"><a href="{% url 'review_details' review.id %}">{{ review.book.title }}</a></h5>
+            <p class="card-text">{{ review.content|truncatewords:10 }}</p>
+            <p class="card-text" style="">~{{ review.author }}</p>
+        </div>
+    </div>
+</div>

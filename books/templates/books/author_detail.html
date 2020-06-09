@@ -7,7 +7,7 @@
 
             <div class="row justify-content-center" >
                 {#       normalne zdjęcia        #}
-{#                <img src="{{ author.photo.url }}" style="display: block; margin: auto; max-block-size: 50rem; border-radius: 50px; padding: 2rem">#}
+                {#                <img src="{{ author.photo.url }}" style="display: block; margin: auto; max-block-size: 50rem; border-radius: 50px; padding: 2rem">#}
                 {#          placeholder dla heroku          #}
                 <img src="{% static 'tolkien.jpg' %}" style="display: block; margin: auto; max-block-size: 50rem; border-radius: 50px; padding: 2rem">
             </div>
@@ -26,13 +26,7 @@
 
             <div class="row justify-content-center" style=" padding: 2rem">
                 {% for book in author.books.all %}
-                    <div class="card col-12 col-md-3" style="border-radius: 0px; background-color: rgb(230, 255, 255); padding-top: 10px">
-                        <a href="{% url 'book_details' book.id %}"><img  src="{% static '3.jpg' %}" class="card-img-top"  style=" border-radius: 10px"></a>
-                        <div class="card-body" >
-                            <h5 class="card-title"><a href="{% url 'book_details' book.id %}">{{ book.title }}</a></h5>
-                            <p class="card-text">{{ book.short_description|truncatewords:10 }}</p>
-                        </div>
-                    </div>
+                    {% include "components/book_tiles2.html" %}
                 {% endfor %}
             </div>
         </div>

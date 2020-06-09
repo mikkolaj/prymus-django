@@ -1,9 +1,10 @@
 from django.shortcuts import render
 # Create your views here.
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, FormView, CreateView
 
 from books.models import Book, Author, Review
 from django.contrib.auth.forms import UserCreationForm
+from books.forms import SimpleForm, BookForm, AuthorForm, ReviewForm
 
 
 def form(request):
@@ -77,3 +78,42 @@ class ReviewDetail(DetailView):
     model = Review
     template_name = "books/review_detail.html"
 
+
+class SimpleFormView(FormView):
+    form_class = SimpleForm
+    template_name = "books/simple_form.html"
+
+    def form_valid(self, form):
+        user_name = form.cleaned_data["name"]
+        return render(self.request,
+                      template_name="simple_form_success.html",
+                      context={"name": user_name})
+
+
+class BookCreate(CreateView):
+    form_class = BookForm
+    template_name = "books/book_form.html"
+
+
+class AuthorCreate(CreateView):
+    form_class = AuthorForm
+    template_name = "books/author_form.html"
+
+
+class ReviewCreate(CreateView):
+    form_class = ReviewForm
+    template_name = "books/review_form.html"
+
+
+def search(request):
+    query = request.GET.get("q")
+    if query:
+        book_results = Book.objects.filter(title__icontains=query)
+        author_results = Author.objects.filter(first_name__contains=query) | \
+                         Author.objects.filter(last_name__contains=query)
+    else:
+        book_results = []
+        author_results = []
+    return render(request,
+                  template_name="search_results.html",
+                  context={"books": book_results, "authors": author_results})
