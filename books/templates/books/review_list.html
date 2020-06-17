@@ -6,11 +6,8 @@
             Napisz recenzję <i class="far fa-comment-alt"></i>
         </a>
         <div class="row" style="border-radius: 50px">
-            {#            {% for i in '0123456789'|make_list %}#}
-
             {% for review in review_list %}
                 {% include "components/review_tiles.html" %}
-                {#            {% endfor %}#}
             {% endfor %}
         </div>
     </div>

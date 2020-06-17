@@ -109,8 +109,8 @@ def search(request):
     query = request.GET.get("q")
     if query:
         book_results = Book.objects.filter(title__icontains=query)
-        author_results = Author.objects.filter(first_name__contains=query) | \
-                         Author.objects.filter(last_name__contains=query)
+        author_results = Author.objects.filter(first_name__icontains=query) | \
+                         Author.objects.filter(last_name__icontains=query)
     else:
         book_results = []
         author_results = []

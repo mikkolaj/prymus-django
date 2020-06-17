@@ -1,3 +1,5 @@
 /venv/
-/venv/*
-/venv
+/covid/
+/.idea/
+/__pycache__/
+/wordgame/

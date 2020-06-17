@@ -1,10 +1,11 @@
 {% load static %}
 <div class="col-12 col-md-3 mb-3" style="padding-top: 10px">
     <div class="card h-100" style="border-radius: 10px">
-        {#       normalne zdjęcia        #}
-        {#                    <a href="{% url 'author_detail' author.id %}"><img  src="{{ author.photo.url }}" class="card-img-top" alt="..." style=" border-radius: 10px"></a>#}
-        {#          placeholder dla heroku          #}
-        <a href="{% url 'author_detail' author.id %}"><img src="{% static 'tolkien.jpg' %}" class="card-img-top" alt="..." style="height: 220px; object-fit: cover"></a>
+        {% if author.photo.url is not None %}
+            <a href="{% url 'author_detail' author.id %}"><img  src="{{ author.photo.url }}" class="card-img-top" alt="..." style=" height: 220px; object-fit: cover"></a>
+        {% else %}
+            <a href="{% url 'author_detail' author.id %}"><img src="{% static 'tolkien.jpg' %}" class="card-img-top" alt="..." style="height: 220px; object-fit: cover"></a>
+        {% endif %}
         <div class="card-body" >
             <h5 class="card-title"><a href="{% url 'author_detail' author.id %}">{{ author }}</a></h5>
             <p class="card-text">{{ author.about|truncatewords:10 }}</p>
